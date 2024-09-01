@@ -1,0 +1,53 @@
+﻿<UserControl
+    x:Class="MVVM01.View.ucButtons"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:MVVM01.View"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:MVVM01.ViewModel"
+    d:DesignHeight="75"
+    d:DesignWidth="600"
+    Background="{StaticResource myBackGround}"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <vm:clsShoolManagerVM x:Key="_SchoolManager" />
+
+    </UserControl.Resources>
+
+
+    <StackPanel Orientation="Horizontal">
+        <Button
+            Command="{Binding cmdNew}"
+            CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+            Style="{StaticResource AddImage}"
+            ToolTip="New" />
+        <Button
+            Command="{Binding cmdSave}"
+            CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+            Style="{StaticResource SaveImage}"
+            ToolTip="Save" />
+        <Button
+            Command="{Binding cmdDelete}"
+            CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+            Style="{StaticResource DeleteImage}"
+            ToolTip="Delete" />
+        <Button
+            Command="{Binding cmdCancel}"
+            CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+            Style="{StaticResource CancelImage}"
+            ToolTip="Cancel" />
+        <Button
+            Command="{Binding cmdHelp}"           
+            Style="{StaticResource HelpImage}"
+            ToolTip="Help" />
+
+
+        <Button
+            DataContext="{StaticResource _SchoolManager}"
+            Command="{Binding cmdCmlose}"
+            CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+            Style="{StaticResource CloseImage}"
+            ToolTip="Exit" />
+    </StackPanel>
+</UserControl>

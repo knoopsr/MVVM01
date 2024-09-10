@@ -45,7 +45,7 @@
 
         <Button
             DataContext="{StaticResource _SchoolManager}"
-            Command="{Binding cmdCmlose}"
+            Command="{Binding cmdClose}"
             CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
             Style="{StaticResource CloseImage}"
             ToolTip="Exit" />

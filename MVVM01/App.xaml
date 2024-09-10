@@ -8,8 +8,8 @@
 
     <Application.Resources>
         <ResourceDictionary>
-            <local:clsVMLocator x:Key="_VMLocator"></local:clsVMLocator>
-            <myConverters:clsIntVisibilityConverter x:Key="_clsIntVisibilityConverter"></myConverters:clsIntVisibilityConverter>
+            <local:clsVMLocator x:Key="_VMLocator" />
+            <myConverters:clsIntVisibilityConverter x:Key="_clsIntVisibilityConverter" />
 
 
             <SolidColorBrush x:Key="TitleColor" Color="#FFA3C400" />
@@ -36,7 +36,6 @@
                 </Style.Triggers>
             </Style>
 
-
             <Style x:Key="SaveImage" TargetType="ContentControl">
                 <Setter Property="Margin" Value="5" />
                 <Setter Property="Cursor" Value="Hand" />
@@ -45,14 +44,16 @@
                         <Setter Property="Template">
                             <Setter.Value>
                                 <ControlTemplate TargetType="ContentControl">
-                                    <Path
-                                        Width="20"
-                                        Height="20"
-                                        Margin="0,0,0,0"
-                                        Data="{StaticResource mySaveButton}"
-                                        Fill="{StaticResource myImageColor}"
-                                        RenderTransformOrigin="0.5,0.5"
-                                        Stretch="Uniform" />
+                                    <Border Background="{StaticResource myBackGround}">
+                                        <Path
+                                            Width="20"
+                                            Height="20"
+                                            Margin="0,0,0,0"
+                                            Data="{StaticResource mySaveButton}"
+                                            Fill="{StaticResource myImageColor}"
+                                            RenderTransformOrigin="0.5,0.5"
+                                            Stretch="Uniform" />
+                                    </Border>
                                 </ControlTemplate>
                             </Setter.Value>
                         </Setter>
@@ -84,14 +85,16 @@
                         <Setter Property="Template">
                             <Setter.Value>
                                 <ControlTemplate TargetType="ContentControl">
-                                    <Path
-                                        Width="20"
-                                        Height="20"
-                                        Margin="0,0,0,0"
-                                        Data="{StaticResource myAddButton}"
-                                        Fill="{StaticResource myImageColor}"
-                                        RenderTransformOrigin="0.5,0.5"
-                                        Stretch="Uniform" />
+                                    <Border Background="{StaticResource myBackGround}">
+                                        <Path
+                                            Width="20"
+                                            Height="20"
+                                            Margin="0,0,0,0"
+                                            Data="{StaticResource myAddButton}"
+                                            Fill="{StaticResource myImageColor}"
+                                            RenderTransformOrigin="0.5,0.5"
+                                            Stretch="Uniform" />
+                                    </Border>
                                 </ControlTemplate>
                             </Setter.Value>
                         </Setter>
@@ -123,14 +126,16 @@
                         <Setter Property="Template">
                             <Setter.Value>
                                 <ControlTemplate TargetType="ContentControl">
-                                    <Path
-                                        Width="20"
-                                        Height="20"
-                                        Margin="0,0,0,0"
-                                        Data="{StaticResource myDeleteButton}"
-                                        Fill="{StaticResource myImageColor}"
-                                        RenderTransformOrigin="0.5,0.5"
-                                        Stretch="Uniform" />
+                                    <Border Background="{StaticResource myBackGround}">
+                                        <Path
+                                            Width="20"
+                                            Height="20"
+                                            Margin="0,0,0,0"
+                                            Data="{StaticResource myDeleteButton}"
+                                            Fill="{StaticResource myImageColor}"
+                                            RenderTransformOrigin="0.5,0.5"
+                                            Stretch="Uniform" />
+                                    </Border>
                                 </ControlTemplate>
                             </Setter.Value>
                         </Setter>
@@ -162,14 +167,16 @@
                         <Setter Property="Template">
                             <Setter.Value>
                                 <ControlTemplate TargetType="ContentControl">
-                                    <Path
-                                        Width="20"
-                                        Height="20"
-                                        Margin="0,0,0,0"
-                                        Data="{StaticResource myCancelButton}"
-                                        Fill="{StaticResource myImageColor}"
-                                        RenderTransformOrigin="0.5,0.5"
-                                        Stretch="Uniform" />
+                                    <Border Background="{StaticResource myBackGround}">
+                                        <Path
+                                            Width="20"
+                                            Height="20"
+                                            Margin="0,0,0,0"
+                                            Data="{StaticResource myCancelButton}"
+                                            Fill="{StaticResource myImageColor}"
+                                            RenderTransformOrigin="0.5,0.5"
+                                            Stretch="Uniform" />
+                                    </Border>
                                 </ControlTemplate>
                             </Setter.Value>
                         </Setter>
@@ -201,14 +208,16 @@
                         <Setter Property="Template">
                             <Setter.Value>
                                 <ControlTemplate TargetType="ContentControl">
-                                    <Path
-                                        Width="20"
-                                        Height="20"
-                                        Margin="0,0,0,0"
-                                        Data="{StaticResource myCloseButton}"
-                                        Fill="{StaticResource myImageColor}"
-                                        RenderTransformOrigin="0.5,0.5"
-                                        Stretch="Uniform" />
+                                    <Border Background="{StaticResource myBackGround}">
+                                        <Path
+                                            Width="20"
+                                            Height="20"
+                                            Margin="0,0,0,0"
+                                            Data="{StaticResource myCloseButton}"
+                                            Fill="{StaticResource myImageColor}"
+                                            RenderTransformOrigin="0.5,0.5"
+                                            Stretch="Uniform" />
+                                    </Border>
                                 </ControlTemplate>
                             </Setter.Value>
                         </Setter>
@@ -240,14 +249,16 @@
                         <Setter Property="Template">
                             <Setter.Value>
                                 <ControlTemplate TargetType="ContentControl">
-                                    <Path
-                                        Width="20"
-                                        Height="20"
-                                        Margin="0,0,0,0"
-                                        Data="{StaticResource myHelpButton}"
-                                        Fill="{StaticResource myImageColor}"
-                                        RenderTransformOrigin="0.5,0.5"
-                                        Stretch="Uniform" />
+                                    <Border Background="{StaticResource myBackGround}">
+                                        <Path
+                                            Width="20"
+                                            Height="20"
+                                            Margin="0,0,0,0"
+                                            Data="{StaticResource myHelpButton}"
+                                            Fill="{StaticResource myImageColor}"
+                                            RenderTransformOrigin="0.5,0.5"
+                                            Stretch="Uniform" />
+                                    </Border>
                                 </ControlTemplate>
                             </Setter.Value>
                         </Setter>
@@ -270,9 +281,6 @@
                     </Trigger>
                 </Style.Triggers>
             </Style>
-
-
-
 
             <Style TargetType="{x:Type TextBox}">
                 <Setter Property="KeyboardNavigation.TabNavigation" Value="None" />
@@ -298,8 +306,6 @@
 
                                     </Image.Source>
                                 </Image>
-
-
                             </DockPanel>
                         </ControlTemplate>
                     </Setter.Value>

@@ -113,13 +113,21 @@ namespace MVVM01.ViewModel
 
         private bool CanExecuteCMD_Help(object obj)
         {
-            return true;
+            return isHelp;
         }
 
         private void ExecuteCMD_Help(object obj)
         {
-            Process.Start("https://www.google.com");
+           Process.Start(psi);
         }
+
+        ProcessStartInfo psi = new ProcessStartInfo
+        {
+            FileName = "http://www.google.com",
+            UseShellExecute = true
+        };
+
+
 
         private bool CanExecuteCMD_Cancel(object obj)
         {
@@ -158,6 +166,7 @@ namespace MVVM01.ViewModel
             }
             return isNew;
         }
+
         private void ExecuteCMD_New(object obj)
         {
             clsCityM CityToInsert = new clsCityM()
@@ -180,6 +189,7 @@ namespace MVVM01.ViewModel
             isSave = true;
 
             NewStatus = true;
+ 
 
         }
 
@@ -298,7 +308,7 @@ namespace MVVM01.ViewModel
         {
             Cities = _CityDataService.GetCities();
         }
-
+            
 
     }
 }

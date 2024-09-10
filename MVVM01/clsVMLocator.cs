@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MVVM01.ViewModel;
+﻿using MVVM01.ViewModel;
 
 namespace MVVM01
 {
@@ -18,6 +13,18 @@ namespace MVVM01
         private static clsTaskPerClassRoomVM _TaskPerClassRoomVM;
 
         #endregion
+
+
+
+
+        public static clsSchoolVM SchoolViewModel
+        {
+            get
+            {
+                _SchoolVM = new clsSchoolVM();
+                return _SchoolVM;
+            }
+        }
 
 
         public static clsCityVM CityViewModel

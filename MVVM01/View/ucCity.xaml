@@ -41,10 +41,11 @@
             HorizontalAlignment="Right"
             VerticalAlignment="Top" />
 
+
         <Label
             Grid.Row="0"
             Grid.Column="0"
-            Grid.ColumnSpan="4"
+            Grid.ColumnSpan="2"
             Margin="20"
             FontSize="60"
             Foreground="{StaticResource TitleColor}"
@@ -61,7 +62,7 @@
             FontFamily="Calibri Light"
             FontSize="20"
             Foreground="{StaticResource TitleColor}"
-            Visibility="{Binding SelectedSchool.MyVisibility, Mode=TwoWay, Converter={StaticResource _clsIntVisibilityConverter}}" />
+            Visibility="{Binding SelectedCity.myVisibility, Mode=TwoWay, Converter={StaticResource _clsIntVisibilityConverter}}" />
 
         <ComboBox
             x:Name="cboKeuze"
@@ -75,9 +76,9 @@
             Utilities:FocusExtension.IsFocused="{Binding IsFocused, Mode=TwoWay}"
             BorderThickness="0"
             ItemsSource="{Binding Cities}"
-            SelectedIndex="{Binding SelectedCity.mySelectedIndew, Mode=TwoWay}"
+            SelectedIndex="{Binding SelectedCity.mySelectedIndex, Mode=TwoWay}"
             SelectedItem="{Binding SelectedCity}"
-            Visibility="{Binding SelectedCity.MyVisibility, Mode=TwoWay, Converter={StaticResource _clsIntVisibilityConverter}}" />
+            Visibility="{Binding SelectedCity.myVisibility, Mode=TwoWay, Converter={StaticResource _clsIntVisibilityConverter}}" />
 
 
         <Label
@@ -114,6 +115,10 @@
             FontFamily="Calibri Light"
             FontSize="20"
             Text="{Binding SelectedCity.PostalCode, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, NotifyOnValidationError=True, ValidatesOnExceptions=True}" />
+
+
+
+
 
     </Grid>
 </UserControl>

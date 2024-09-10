@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MVVM01.DAL.Properties {
+namespace MVVM01.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace MVVM01.DAL.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MVVM01.DAL.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MVVM01.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,78 +57,6 @@ namespace MVVM01.DAL.Properties {
             }
             set {
                 resourceCulture = value;
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to D_School.
-        /// </summary>
-        internal static string D__School {
-            get {
-                return ResourceManager.GetString("D__School", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to D_City.
-        /// </summary>
-        internal static string D_City {
-            get {
-                return ResourceManager.GetString("D_City", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to I_City.
-        /// </summary>
-        internal static string I_City {
-            get {
-                return ResourceManager.GetString("I_City", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to I_School.
-        /// </summary>
-        internal static string I_School {
-            get {
-                return ResourceManager.GetString("I_School", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to S_City.
-        /// </summary>
-        internal static string S_City {
-            get {
-                return ResourceManager.GetString("S_City", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to S_School.
-        /// </summary>
-        internal static string S_School {
-            get {
-                return ResourceManager.GetString("S_School", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to U_City.
-        /// </summary>
-        internal static string U_City {
-            get {
-                return ResourceManager.GetString("U_City", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to U_School.
-        /// </summary>
-        internal static string U_School {
-            get {
-                return ResourceManager.GetString("U_School", resourceCulture);
             }
         }
     }

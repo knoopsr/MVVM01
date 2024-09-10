@@ -14,7 +14,7 @@ namespace MVVM01.ViewModel
         public ICommand CMD_OpenTask { get; set; }
         public ICommand CMD_OpenClassRoom { get; set; }
         public ICommand CMD_OpenPerson { get; set; }
-        public ICommand CMD_OpenTaskPerClassRoom { get; set; }
+        public ICommand CMD_OpenTasksPerClassRoom { get; set; }
         public ICommand cmdClose { get; set; }
 
 
@@ -32,7 +32,7 @@ namespace MVVM01.ViewModel
             CMD_OpenTask = new clsCustomCommand(ExecuteCMD_OpenTask, CanExecuteCMD_OpenTask);
             CMD_OpenClassRoom = new clsCustomCommand(ExecuteCMD_OpenClassRoom, CanExecuteCMD_OpenClassRoom);
             CMD_OpenPerson = new clsCustomCommand(ExecuteCMD_OpenPerson, CanExecuteCMD_OpenPerson);
-            CMD_OpenTaskPerClassRoom = new clsCustomCommand(ExecuteCMD_OpenTasksPerClassRooom, CanExecuteCMD_OpenTasksPerClassRooom);
+            CMD_OpenTasksPerClassRoom = new clsCustomCommand(ExecuteCMD_OpenTasksPerClassRooom, CanExecuteCMD_OpenTasksPerClassRooom);
 
             cmdClose = new clsCustomCommand(Execute_cmdClose, CanExecute_cmdClose);
 

@@ -120,13 +120,25 @@
   <data name="D_City" xml:space="preserve">
     <value>D_City</value>
   </data>
+  <data name="D__School" xml:space="preserve">
+    <value>D_School</value>
+  </data>
   <data name="I_City" xml:space="preserve">
     <value>I_City</value>
+  </data>
+  <data name="I_School" xml:space="preserve">
+    <value>I_School</value>
   </data>
   <data name="S_City" xml:space="preserve">
     <value>S_City</value>
   </data>
+  <data name="S_School" xml:space="preserve">
+    <value>S_School</value>
+  </data>
   <data name="U_City" xml:space="preserve">
     <value>U_City</value>
+  </data>
+  <data name="U_School" xml:space="preserve">
+    <value>U_School</value>
   </data>
 </root>
